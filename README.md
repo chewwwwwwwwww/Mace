@@ -1,5 +1,5 @@
 # Mace
-<h3>Automation of tasks for an accounting firm</h3>
+<h3>Automation of tasks for Accounting Firm</h3>
 <p>Improving the way data is managed and clientele engagement pipeline</p>
 
 <h4>Real-time Automations</h4>
