@@ -1,5 +1,5 @@
 var startTime = Date.now()
-var KYCSS = SpreadsheetApp.openById("1_-yXCzeHl_OOrjPYsKCr4JGwTxcM8ScXGtIk5YHzeeM");
+var KYCSS = SpreadsheetApp.openById("INSERT ID HERE");
 var KYCSheet = KYCSS.getSheetByName("KYC Form Responses");
 var KYCValues = KYCSheet.getDataRange().getValues()
 var KYCLastColumn = KYCSheet.getLastColumn();
@@ -37,7 +37,7 @@ var KYCDuration = ((Date.now() - startTime)/1000)
 Logger.log('KYC Duration: ' + KYCDuration.toString() + 's' )
 startTime = Date.now()
 
-var erSS = SpreadsheetApp.openById("1fENbME3jdio-kIkuHp9H6rLr_9tzXL39jNMjFx70lxc");
+var erSS = SpreadsheetApp.openById("INSERT ID HERE");
 var erSheet = erSS.getSheetByName("Engagement Recovery");
 var erValues = erSheet.getDataRange().getValues();
 var erLastRow = erSheet.getRange("A1:A").getValues().filter(String).length;
@@ -121,7 +121,7 @@ var employeesDuration = ((Date.now() - startTime)/1000)
 Logger.log('Employees Duration: ' + employeesDuration.toString() + 's' )
 startTime = Date.now()
 
-var raSS = SpreadsheetApp.openById("1Xe4Njmz7REO3sEdR9u3c0MKSxIuN6JzIF4LlTQ3hRJ8");
+var raSS = SpreadsheetApp.openById("INSERT ID HERE");
 var raSheet = raSS.getSheetByName("FY2018");
 var raValues = raSheet.getDataRange().getValues()
 var raLastColumn = raSheet.getLastColumn();
@@ -219,9 +219,9 @@ var raDuration = ((Date.now() - startTime)/1000)
 Logger.log('RA Duration: ' + raDuration.toString() + 's' )
 startTime = Date.now()
 
-var timesheetFolder = DriveApp.getFolderById('1rBtwgsfUJ2NSeKSSpBP79_M558_CPSem')
-var timesheetTemplate = DriveApp.getFileById('1riCcAwe8LQ9nXSIJ_5wZhQuvjhwGkA_4RfQCeTnmrIM')
-var timesheetTemplateSS = SpreadsheetApp.openById("1riCcAwe8LQ9nXSIJ_5wZhQuvjhwGkA_4RfQCeTnmrIM")
+var timesheetFolder = DriveApp.getFolderById('INSERT ID HERE')
+var timesheetTemplate = DriveApp.getFileById('INSERT ID HERE')
+var timesheetTemplateSS = SpreadsheetApp.openById("INSERT ID HERE")
 var timesheetTemplateSheet = timesheetTemplateSS.getSheetByName("Template Sheet");
 var timesheetTemplateValues = timesheetTemplateSheet.getDataRange().getValues()
 var timesheetHeaderRow = 8
@@ -277,8 +277,8 @@ var timesheetDuration = ((Date.now() - startTime)/1000)
 Logger.log('Timesheet Duration: ' + timesheetDuration.toString() + 's' )
 startTime = Date.now()
 
-var reportFolder = DriveApp.getFolderById('1YE5oYJiwrNYww31nHPNL9rVg91MEv2xE')
-var reportTemplate = DriveApp.getFileById('1gGmPhny-Os6_Qn3r4Q2-1xcnM-OuEdMoZSTlKjN8rsA')
+var reportFolder = DriveApp.getFolderById('INSERT ID HERE')
+var reportTemplate = DriveApp.getFileById('INSERT ID HERE')
 
 function onFormSubmit(){
   Logger.log('onFormSubmit')
@@ -297,8 +297,8 @@ function onFormSubmit(){
 }
 
 function updateEmployeesOnForm(){
-  var form = FormApp.openById("1vG_SnkgV3NkQm-v-ttkO3vozVxslslm4RszglLmotdE");
-  var employeeList = form.getItemById("1177902667").asCheckboxItem();
+  var form = FormApp.openById("INSERT ID HERE");
+  var employeeList = form.getItemById("INSERT ID HERE").asCheckboxItem();
   employeeList.setChoiceValues(employeeNames);  
 }
 
