@@ -1,4 +1,4 @@
-var ss = SpreadsheetApp.openById("1_-yXCzeHl_OOrjPYsKCr4JGwTxcM8ScXGtIk5YHzeeM");
+var ss = SpreadsheetApp.openById("INSERT ID HERE");
 var clientsSheet = ss.getSheetByName("KYC Form Responses");
 var values = ss.getDataRange().getValues()
 
